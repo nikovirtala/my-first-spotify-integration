@@ -9,6 +9,16 @@ const project = new web.ReactProject({
     "js-cookie",
   ],
   devDeps: ["prettier"],
+  depsUpgradeOptions: {
+    ignoreProjen: false,
+    workflowOptions: {
+      labels: ['auto-approve', 'auto-merge'],
+    },
+  },
+  depsUpgradeAutoMerge: true,
+  autoApproveOptions: {
+    allowedUsernames: ['nikovirtala'],
+  },
   prettier: true,
   jest: false,
   release: false,
