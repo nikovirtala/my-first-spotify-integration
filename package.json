@@ -9,19 +9,19 @@
     "eject": "npx projen eject",
     "package": "npx projen package",
     "post-compile": "npx projen post-compile",
+    "post-upgrade": "npx projen post-upgrade",
     "pre-compile": "npx projen pre-compile",
     "test": "npx projen test",
     "upgrade": "npx projen upgrade",
-    "upgrade-projen": "npx projen upgrade-projen",
     "projen": "npx projen"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "npm-check-updates": "^12",
     "prettier": "^2.5.1",
-    "projen": "^0.47.15"
+    "projen": "^0.52.28"
   },
   "dependencies": {
     "js-cookie": "^3.0.1",
@@ -31,7 +31,7 @@
     "react-spotify-api": "^3.0.0",
     "react-spotify-auth": "^1.4.3",
     "react-spotify-web-playback": "^0.9.1",
-    "web-vitals": "^2.1.3"
+    "web-vitals": "^2.1.4"
   },
   "main": "lib/index.js",
   "license": "Apache-2.0",

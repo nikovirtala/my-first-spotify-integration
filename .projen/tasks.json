@@ -85,10 +85,13 @@
     },
     "eject": {
       "name": "eject",
-      "description": "Ejects your React application from react-scripts",
+      "description": "Remove projen from the project",
+      "env": {
+        "PROJEN_EJECTING": "true"
+      },
       "steps": [
         {
-          "exec": "react-scripts eject"
+          "spawn": "default"
         }
       ]
     },
@@ -107,6 +110,10 @@
     "post-compile": {
       "name": "post-compile",
       "description": "Runs after successful compilation"
+    },
+    "post-upgrade": {
+      "name": "post-upgrade",
+      "description": "Runs after upgrading dependencies"
     },
     "pre-compile": {
       "name": "pre-compile",
@@ -129,61 +136,31 @@
       },
       "steps": [
         {
-          "exec": "npm-check-updates --dep dev --upgrade --target=minor --reject='projen'"
+          "exec": "npm-check-updates --dep dev --upgrade --target=minor"
         },
         {
-          "exec": "npm-check-updates --dep optional --upgrade --target=minor --reject='projen'"
+          "exec": "npm-check-updates --dep optional --upgrade --target=minor"
         },
         {
-          "exec": "npm-check-updates --dep peer --upgrade --target=minor --reject='projen'"
+          "exec": "npm-check-updates --dep peer --upgrade --target=minor"
         },
         {
-          "exec": "npm-check-updates --dep prod --upgrade --target=minor --reject='projen'"
+          "exec": "npm-check-updates --dep prod --upgrade --target=minor"
         },
         {
-          "exec": "npm-check-updates --dep bundle --upgrade --target=minor --reject='projen'"
-        },
-        {
-          "exec": "yarn install --check-files"
-        },
-        {
-          "exec": "yarn upgrade @testing-library/jest-dom @testing-library/react @testing-library/user-event npm-check-updates prettier js-cookie react react-dom react-scripts react-spotify-api react-spotify-auth react-spotify-web-playback web-vitals"
-        },
-        {
-          "exec": "npx projen"
-        }
-      ]
-    },
-    "upgrade-projen": {
-      "name": "upgrade-projen",
-      "description": "upgrade projen",
-      "env": {
-        "CI": "0"
-      },
-      "steps": [
-        {
-          "exec": "npm-check-updates --dep dev --upgrade --target=minor --filter='projen'"
-        },
-        {
-          "exec": "npm-check-updates --dep optional --upgrade --target=minor --filter='projen'"
-        },
-        {
-          "exec": "npm-check-updates --dep peer --upgrade --target=minor --filter='projen'"
-        },
-        {
-          "exec": "npm-check-updates --dep prod --upgrade --target=minor --filter='projen'"
-        },
-        {
-          "exec": "npm-check-updates --dep bundle --upgrade --target=minor --filter='projen'"
+          "exec": "npm-check-updates --dep bundle --upgrade --target=minor"
         },
         {
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade projen"
+          "exec": "yarn upgrade"
         },
         {
           "exec": "npx projen"
+        },
+        {
+          "spawn": "post-upgrade"
         }
       ]
     }
