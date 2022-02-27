@@ -4209,9 +4209,9 @@ eslint-plugin-react-hooks@^4.3.0:
   integrity sha512-XslZy0LnMn+84NEG9jSGR6eGqaZB3133L8xewQo3fQagbQuGt7a63gf+P1NGKZavEYEC3UXaWEAA/AqDkuN6xA==
 
 eslint-plugin-react@^7.27.1:
-  version "7.29.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.29.1.tgz#6c40bc83142bb63d132a1b3565e2ea655411f800"
-  integrity sha512-WtzRpHMhsOX05ZrkyaaqmLl2uXGqmYooCfBxftJKlkYdsltiufGgfU7uuoHwR2lBam2Kh/EIVID4aU9e3kbCMA==
+  version "7.29.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.29.2.tgz#2d4da69d30d0a736efd30890dc6826f3e91f3f7c"
+  integrity sha512-ypEBTKOy5liFQXZWMchJ3LN0JX1uPI6n7MN7OPHKacqXAxq5gYC30TdO7wqGYQyxD1OrzpobdHC3hDmlRWDg9w==
   dependencies:
     array-includes "^3.1.4"
     array.prototype.flatmap "^1.2.5"
@@ -7902,10 +7902,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.52.48:
-  version "0.52.48"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.52.48.tgz#d6f2d0705ee1c875fa7530586d94b850eca8b694"
-  integrity sha512-8HYGNWzbLR12uao/UEU4b4chLtCBQL1bkvih/QXrpqtYLZsb/r9ZnTV9PJDFZGBdfttAE4mljB20WSTNfdB7rQ==
+projen@^0.52.49:
+  version "0.52.49"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.52.49.tgz#2e13ced5f9e3ada3977dc5b25c1aa809ed881800"
+  integrity sha512-UnJr2fr7XRk6wSnz/f7Q/oLIKIFNwIxYLYFfu9XG6SQb50y/TdZ/oJGPo1HdJel/1jaiCgNNWhgim3lewoVqkQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
