@@ -17,11 +17,11 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^12.1.4",
+    "@testing-library/react": "^12.1.5",
     "@testing-library/user-event": "^13.5.0",
     "npm-check-updates": "^12",
     "prettier": "^2.6.2",
-    "projen": "^0.54.16"
+    "projen": "^0.54.21"
   },
   "dependencies": {
     "js-cookie": "^3.0.1",
