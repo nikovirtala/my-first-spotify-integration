@@ -21,7 +21,7 @@
     "@testing-library/user-event": "^13.5.0",
     "npm-check-updates": "^12",
     "prettier": "^2.6.2",
-    "projen": "^0.56.37"
+    "projen": "^0.56.38"
   },
   "dependencies": {
     "js-cookie": "^3.0.1",
