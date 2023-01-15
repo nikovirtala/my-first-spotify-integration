@@ -20,8 +20,8 @@
     "@testing-library/react": "^12.1.5",
     "@testing-library/user-event": "^13.5.0",
     "npm-check-updates": "^16",
-    "prettier": "^2.8.2",
-    "projen": "^0.66.13"
+    "prettier": "^2.8.3",
+    "projen": "^0.66.14"
   },
   "dependencies": {
     "js-cookie": "^3.0.1",
