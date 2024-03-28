@@ -16,21 +16,21 @@
     "projen": "npx projen"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^12.1.5",
     "@testing-library/user-event": "^13.5.0",
-    "npm-check-updates": "^16",
-    "prettier": "^2.8.3",
-    "projen": "^0.66.14"
+    "constructs": "^10.0.0",
+    "prettier": "^2.8.8",
+    "projen": "^0.80.14"
   },
   "dependencies": {
-    "js-cookie": "^3.0.1",
+    "js-cookie": "^3.0.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "^5",
     "react-spotify-api": "^3.0.0",
     "react-spotify-auth": "^1.4.3",
-    "react-spotify-web-playback": "^0.10.1",
+    "react-spotify-web-playback": "^0.14.3",
     "web-vitals": "^2.1.4"
   },
   "main": "lib/index.js",

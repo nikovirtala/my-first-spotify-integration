@@ -13,8 +13,8 @@
       "type": "build"
     },
     {
-      "name": "npm-check-updates",
-      "version": "^16",
+      "name": "constructs",
+      "version": "^10.0.0",
       "type": "build"
     },
     {
